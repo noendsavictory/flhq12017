@@ -1,0 +1,103 @@
+# flhq12017
+
+***Hybris Get In-App Existing Payment Information***
+{
+  "payments": [
+    {
+      "accountHolderName": "John Doe",
+      "billingAddress": {
+        "country": {
+          "isocode": "US",
+          "name": "United States"
+        },
+        "email": "checkouttest@dd.com",
+        "firstName": "John",
+        "formattedAddress": "Toyosaki, 3-16-19, Osaka, 76107",
+        "id": "8796158623767",
+        "isFPO": false,
+        "lastName": "Doe",
+        "line1": "Toyosaki",
+        "line2": "3-16-19",
+        "postalCode": "76107",
+        "shippingAddress": false,
+        "title": "Mr.",
+        "titleCode": "mr",
+        "town": "Osaka",
+        "visibleInAddressBook": true
+      },
+      "cardNumber": "************1111",
+      "cardType": {
+        "code": "visa",
+        "name": "Visa"
+      },
+      "defaultPayment": false,
+      "expiryMonth": "03",
+      "expiryYear": "2017",
+      "id": "8796125823018",
+      "saved": false,
+      "subscriptionId": "MockedSubscriptionID"
+    },
+    {
+      "accountHolderName": "John Doe",
+      "billingAddress": {
+        "country": {
+          "isocode": "US",
+          "name": "United States"
+        },
+        "email": "checkouttest@dd.com",
+        "firstName": "John",
+        "formattedAddress": "Toyosaki, 3-16-19, Osaka, 76107",
+        "id": "8796191391767",
+        "isFPO": false,
+        "lastName": "Doe",
+        "line1": "Toyosaki",
+        "line2": "3-16-19",
+        "postalCode": "76107",
+        "shippingAddress": false,
+        "title": "Mr.",
+        "titleCode": "mr",
+        "town": "Osaka",
+        "visibleInAddressBook": true
+      },
+      "cardNumber": "************1111",
+      "cardType": {
+        "code": "visa",
+        "name": "Visa"
+      },
+      "defaultPayment": false,
+      "expiryMonth": "03",
+      "expiryYear": "2017",
+      "id": "8796158591018",
+      "saved": false,
+      "subscriptionId": "MockedSubscriptionID"
+    }
+  ]
+}
+
+***Hybris Set Payment Information to Cart/Checkout (If Applicable) API***
+{
+    "accountHolderName":"John Doe",
+    "cardNumber":"4111111111111111",
+    "cardType":{
+        "code":"visa"
+    },
+    "expiryMonth":"03",
+    "expiryYear":"2017",
+    "defaultPayment":true,
+    "billingAddress":{
+        "titleCode":"mr",
+        "firstName":"John",
+        "lastName":"Doe",
+        "line1":"Toyosaki",
+        "line2":"3-16-19",
+        "postalCode":"76107",
+        "town":"Osaka",
+        "country":{
+            "isocode":"US"
+        },
+        "region":{
+            "isocode":"US-TX"
+        }
+    }
+}
+
